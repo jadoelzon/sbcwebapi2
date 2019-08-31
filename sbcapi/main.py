@@ -2,7 +2,6 @@ from flask import Flask, jsonify, Blueprint, request
 from flask_cors import CORS
 from flask_mysqldb import MySQL
 import MySQLdb.cursors
-import simplejson as json
 
 # import sys, os
 # sys.path.insert(0, os.getcwd()+"/PO")
