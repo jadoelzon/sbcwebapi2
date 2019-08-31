@@ -14,6 +14,10 @@ CORS(app)
 
 mysql = MySQL(app)
 
+@app.route('/')
+def index():
+	return "Hello Jad!"
+
 @app.route('/po/<trno>', methods=['GET'])
 def get_po(trno):
 	return pofunc.get_po(trno)
