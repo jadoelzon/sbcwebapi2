@@ -1,18 +1,18 @@
 from flask import Flask, jsonify, Blueprint, request
-# from flask_cors import CORS
-# from flask_mysqldb import MySQL
-# import MySQLdb.cursors
-# import simplejson as json
+from flask_cors import CORS
+from flask_mysqldb import MySQL
+import MySQLdb.cursors
+import simplejson as json
 
-# import sys, os
-# sys.path.insert(0, os.getcwd()+"/PO")
-# import pofunc
+import sys, os
+sys.path.insert(0, os.getcwd()+"/PO")
+import pofunc
 
-# from config import app #database config (config.py)
+from config import app #database config (config.py)
 
-# CORS(app)
+CORS(app)
 
-# mysql = MySQL(app)
+mysql = MySQL(app)
 
 @app.route('/')
 def index():
@@ -117,5 +117,4 @@ def pojson(result):
 
 
 if __name__ == '__main__':
-	app.debug = True
 	app.run()
