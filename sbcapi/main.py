@@ -4,8 +4,8 @@ from flask_mysqldb import MySQL
 import MySQLdb.cursors
 import simplejson as json
 
-import sys, os
-sys.path.insert(0, os.getcwd()+"/PO")
+# import sys, os
+# sys.path.insert(0, os.getcwd()+"/PO")
 import pofunc
 
 from config import app #database config (config.py)
